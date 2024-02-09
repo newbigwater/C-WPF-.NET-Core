@@ -1,4 +1,5 @@
 *.suo
 *.v2
+*.user
 obj
 bin
