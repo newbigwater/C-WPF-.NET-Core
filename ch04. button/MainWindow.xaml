@@ -1,0 +1,30 @@
+﻿<Window x:Class="ch04._button.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ch04._button"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Button>버튼</Button>
+            <Button Content="버튼"/>
+            <Button Content="버튼" Width="100"
+                    x:Name="btn"
+                    ToolTip="클릭해보세요."
+                    Click="Btn_OnClick"
+                    MouseDoubleClick="Btn_OnMouseDoubleClick"
+                    MouseEnter="Btn_OnMouseEnter"
+                    MouseLeave="Btn_OnMouseLeave">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <TextBlock Text="TestBlock" x:Name="txtBlock"></TextBlock>
+
+        </StackPanel>
+    </Grid>
+</Window>
