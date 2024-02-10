@@ -1,0 +1,30 @@
+﻿<Window x:Class="ch07._Img_control.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ch07._Img_control"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Image Source="https://cdn4.iconfinder.com/data/icons/world-flags-12/512/Untitled-2-20-512.png"
+                   Width="100"
+                   x:Name="img"
+                   MouseEnter="Img_OnMouseEnter"
+                   MouseLeave="Img_OnMouseLeave"></Image>
+
+            <Button Width="100">
+                <ContentControl>
+                    <StackPanel>
+                        <Image Source="https://cdn4.iconfinder.com/data/icons/world-flags-12/512/Untitled-2-20-512.png"></Image>
+                        <TextBlock HorizontalAlignment="Center">태극기</TextBlock>
+                    </StackPanel>
+                </ContentControl>
+            </Button>
+            <Image Width="100" Source="/img/1.png" />
+
+        </StackPanel>
+
+    </Grid>
+</Window>

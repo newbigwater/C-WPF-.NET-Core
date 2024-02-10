@@ -1,0 +1,28 @@
+﻿<Window x:Class="ch08._checkbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ch08._checkbox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <Label>과일</Label>
+            <CheckBox>딸</CheckBox>
+            <CheckBox Content="사과"></CheckBox>
+            <CheckBox Content="배"></CheckBox>
+            <CheckBox Content="망고" IsChecked="True"></CheckBox>
+            <CheckBox VerticalContentAlignment="Center"
+                      x:Name="chkCherry"
+                      Checked="ChkCherry_OnChecked"
+                      Unchecked="ChkCherry_OnUnchecked">
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="25" Source="https://cdn4.iconfinder.com/data/icons/fruits-79/48/05-cherry-128.png"></Image>
+                    <TextBlock VerticalAlignment="Center" Text="체리" x:Name="chkBoxTxt"></TextBlock>
+                </StackPanel>
+            </CheckBox>
+        </StackPanel>
+
+    </Grid>
+</Window>
